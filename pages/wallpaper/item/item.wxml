@@ -1,0 +1,9 @@
+<!--pag/pag.wxml-->
+<view class='img'>
+  <image src="{{url}}"></image>
+</view>
+<!-- 底部功能菜单 -->
+<view class="back" bindtap="ev_back">
+    <text>返回</text>
+</view>
+<button class="bt"  bindtap="saveImage">下载</button>

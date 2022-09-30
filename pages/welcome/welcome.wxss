@@ -1,0 +1,47 @@
+/* pages/welcome/welcome.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.Hcontainer{
+  /* background-image: url(http://www.xcuitech.com:9000/homeimage/homeimage.JPG); */
+  background-size: 100% 100%;
+  height: 100vh;
+  width: auto;
+  display:  flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bt{
+  background-color: #9db1703b;
+  border-radius:20px;
+  /* border: 1px solid white; */
+  box-shadow: 1px 1px 7px 7px #fdfdfda9;
+  color: white;
+  height: 8vh;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
+.time{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: fixed;
+  bottom: 100rpx;
+}

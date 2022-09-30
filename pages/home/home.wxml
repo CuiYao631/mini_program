@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="my-swiper" >
+    <swiper indicator-dots="{{indicatorDots}}" style="height: 300px;" autoplay="{{autoplay}}" interval="{{interval}}"
+      duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <view class="child">{{item.resourcesId}}</view>
+          <image src="{{item.url}} "  class="slide-image" >
+          </image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- <text class="userinfo-nickname">微信名：{{UserName}}</text> -->
+  <view class="tui-table-view" style="margin-top: 20px;">
+    <view class="wrap-item ">
+        <navigator 
+        target="miniProgram" 
+        open-type="navigate" 
+        app-id="wx940e37bc0f471016" 
+        path="" 
+        extra-data="" 
+        version="release"
+        hover-class="navigator-hover">配网</navigator>
+    </view>
+    <view class="wrap-item ">
+        <navigator url="../Tool/list/list" hover-class="navigator-hover">工具</navigator>
+    </view>
+    <view class="wrap-item ">
+        <navigator url="../" hover-class="navigator-hover">文章</navigator>
+    </view>
+    <view class="wrap-item ">
+        <navigator url="../wallpaper/list/list" hover-class="navigator-hover">壁纸</navigator>
+    </view>
+    <view class="wrap-item ">
+        <navigator url="../" hover-class="navigator-hover">开发中...</navigator>
+    </view>
+    <view class="wrap-item ">
+        <navigator url="../" hover-class="navigator-hover">开发中...</navigator>
+    </view>
+    <!-- <block wx:for="{{navItems}}">
+      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}">
+        <navigator url="../{{item.url}}" hover-class="navigator-hover">{{item.name}}</navigator>
+      </view>
+    </block> -->
+  </view>
+</view>
